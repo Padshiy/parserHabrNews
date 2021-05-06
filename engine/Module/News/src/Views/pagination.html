@@ -1,0 +1,7 @@
+<div class="pagination">
+{% for key, page in pagination %}
+    {% set selected = (key == 0 ? 'btn btn-primary' : 'btn') %}
+
+<span><a class="px-4 {{selected}}" href="#" onclick="pagination(this); return false;">{{page}}</a></span>
+{% endfor %}
+</div>

@@ -1,0 +1,9 @@
+{
+  "require": {
+    "twig/twig" : "*",
+    "krugozor/database" : "*",
+    "ext-json": "*",
+    "ext-libxml": "*",
+    "ext-dom": "*"
+  }
+}

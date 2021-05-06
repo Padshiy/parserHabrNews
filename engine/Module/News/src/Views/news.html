@@ -1,0 +1,10 @@
+{% for news in newsArray %}
+<div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+    <div class="col p-4 d-flex flex-column position-static">
+        <span class="news__title"><a href="{{news.link}}" target="_blank">{{news.title|raw}}</a></span>
+        <span class="news__value_short">{{news.short|raw}}</span>
+        <a class="btn btn-info" onclick="fullNews(this); return;">Подробнее...</a>
+        <span class="news__value_full">{{news.value|raw}}</span>
+    </div>
+</div>
+{% endfor %}
