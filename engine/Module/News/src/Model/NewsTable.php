@@ -24,9 +24,9 @@ class NewsTable
     public function __construct()
     {
         $host = 'localhost';
-        $login = 'root';
-        $pass = 'cnfczy41946339';
-        $table = 'habr';
+        $login = '';
+        $pass = '';
+        $table = '';
         $this->db = Mysql::create($host, $login, $pass)->setDatabaseName($table)->setCharset("utf8");;
     }
 
